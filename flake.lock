@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1686582075,
+        "narHash": "sha256-vtflsfKkHtF8IduxDNtbme4cojiqvlvjp5QNYhvoHXc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "7e63eed145566cca98158613f3700515b4009ce3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "wwrando": "wwrando"
+      }
+    },
+    "wwrando": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1673034664,
+        "narHash": "sha256-GbjvTGUJcyJBIvBs71fIUe/VY2K2cC97n9iRT/Z0TzU=",
+        "owner": "LagoLunatic",
+        "repo": "wwrando",
+        "rev": "ec39074c98a502493b705c62a11673d506865f5e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LagoLunatic",
+        "ref": "1.10.0",
+        "repo": "wwrando",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

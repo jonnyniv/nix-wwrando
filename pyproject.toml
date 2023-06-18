@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+
+[project]
+name = "wwrando"
+version = "1.10.0"
+authors = [
+  {name = "LagoLunatic"}
+]
+description = "Wind Waker Randomiser"
+dependencies = [
+  "PyYaml",
+  "Pillow",
+  "appdirs",
+  "certifi"
+]
+
+[project.scripts]
+wwrando = "wwrando_run:main"
+
+[tool.setuptools]
+py-modules = ["wwrando", "wwrando_run", "wwrando_paths", "tweaks", "randomizer", "fs_helpers", "data_tables", "customizer"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+asm = ["*.rel"]
+assets = ["*", "../version.txt"]
+"*" = ["*.txt"]
+
